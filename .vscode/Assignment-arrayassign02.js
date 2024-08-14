@@ -32,6 +32,31 @@ for (let index = 0; index < array.length; index++) {
     }
 }
 console.log(`*********************************************************************`);
+var addition=0;
+for (let index = 0; index < array.length; index++) {
+    if (index%2==0) {
+        const element = array[index];
+        addition=addition+element;
+    }    
+}
+console.log(`6. finding all even position from array and sum of it : ${addition}`);
+console.log(`*********************************************************************`);
+var addition=0;
+for (let index = 0; index < array.length; index++) {
+    if (index%2==1) {
+        const element = array[index];
+        addition=addition+element;
+    }    
+}
+console.log(`7. finding all odd position from array and sum of it : ${addition}`);
+console.log(`*********************************************************************`);
+var sum=0;
+for (const element of array) {
+    sum=sum+element;
+}
+console.log(`8. finding sum of all elements from array : ${sum}`);
+
+console.log(`*********************************************************************`);
 console.log(`9. finding numbers which are multiple of 5 : ${numArray}`);
 const indexOf115=array.indexOf(115);
     if (indexOf115==-1) {
