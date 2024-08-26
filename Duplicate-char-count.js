@@ -1,4 +1,4 @@
-function printDup(str) {
+function print(str) {
     let charCount = {};
 
     for (let i = 0; i < str.length; i++) {
@@ -17,7 +17,7 @@ function printDup(str) {
 const strings=["Banana","Apple","Software Developer"];
 strings.forEach(str=>{
     console.log(`Duplicate char in the strings are "${str}" : `);
-    printDup(str);
+    print(str);
     console.log('');
     
     
