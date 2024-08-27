@@ -11,23 +11,25 @@
 // });
 
 // console.log(uniqueNumbers); 
-let str="How are you mate";
-// let length = length(str);
-for(let i=0;i<str.length;i++)
-{
-    if(i==0||i==(length-1)) //Converting character at first and last index to uppercase.
-    {
-        str[i]=toupper(str[i]);
+
+
+
+
+
+
+
+
+
+function cap(str){
+    let spl = str.split(' ');
+    for(let i = 0; i < spl.length; i++){
+      let temp = spl[i];
+      temp = temp[0].toUpperCase() + temp.slice(1)
+      temp = temp.slice(0,-1) + temp[temp.length - 1].toUpperCase();
+      spl[i] = temp;
     }
-    else if(str[i]==' ') //Converting characters present before and after space to uppercase.
-    {
-        str[i-1]=toupper(str[i-1]);
-        str[i+1]=toupper(str[i+1]);
-    }
-}
-
-//Printing result.
-// printf("String after capitalizing first and last letter of each word:\n%s", str);
-console.log(`"String after capitalizing first and last letter of each word:", ${str}`);
-
-
+    return spl.join(' ');
+  }
+  
+  console.log(cap("How are you mate"))
+  
