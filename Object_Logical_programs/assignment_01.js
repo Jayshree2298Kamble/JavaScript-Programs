@@ -50,13 +50,7 @@ var emp=[{
 }];
 function updateEmpSalary (id,newSalary) {
     for(var i=0;i<=emp.length;i++)
-    {
-        if (emp[i].id===id) {
-            emp[i].salary=newSalary;
-            return;
-        }
-    }
-}
+    {if (emp[i].id===id) {emp[i].salary=newSalary;return;}}}
 updateEmpSalary(1,60000);
 console.table(emp);
 
